@@ -1,0 +1,61 @@
+
+.botonera {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.btn_botonera {
+    color: #FFF;
+    margin-left: .5rem;
+
+    display: inline-block;
+    padding: .5rem 1rem;
+    background-color: var(--green-color);
+    border-radius: 66px;
+    font-weight: 900;
+    font-size: 1.2rem;
+    
+}
+
+.grid_servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1rem;
+  }
+
+
+.serviciosCard {
+    box-shadow: 0px 4px 20px 4px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 2.5rem;
+}
+
+.serviciosCard_title {
+    color: var(--yellow-color);
+    font-size: 3rem;
+}
+
+.serviciosCard_subTitleTop {
+    opacity: .6;
+}
+
+.serviciosCard_info {
+  
+}
+
+.cardInside ul {
+    padding-left: 0;
+}
+
+.serviciosCard_button {
+    color: #FFF;
+    margin: 0 auto;
+    display: block;
+    padding: .5rem 1rem;
+    background-color: var(--green-color);
+    border-radius: 66px;
+    font-weight: 900;
+    font-size: 1.2rem;
+
+}
