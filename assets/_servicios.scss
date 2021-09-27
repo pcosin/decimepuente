@@ -69,3 +69,12 @@
         align-items: center;
     }
 }
+
+@media screen and (max-width: 570px) {
+
+.grid_servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+}

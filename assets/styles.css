@@ -78,6 +78,16 @@
   }
 }
 
+@media screen and (max-width: 570px) {
+  .grid_servicios {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+}
+
 .fqa_titulo {
   color: var(--yellow-color);
 }
