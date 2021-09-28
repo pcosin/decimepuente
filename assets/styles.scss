@@ -188,7 +188,11 @@ padding: 2rem;
       font-size: 5rem;
     }
 
+/*========== Marcas ==========*/
 
+.marcas {
+  background-color: #FFFFFF1A;
+}
 
 /*========== Footer ==========*/
 
@@ -240,6 +244,8 @@ padding: 2rem;
 .search {
   align-self: center;
   width: 100%;
+  display: flex;
+  justify-content: flex-end;
 
   input {
     border: 2px solid var(--text-color);
@@ -339,6 +345,7 @@ padding: 2rem;
     }
   
     .search {
+      justify-content: center;
       input {
         padding: 0.5rem 3rem 0.5rem 0.5rem;
   
@@ -360,6 +367,7 @@ padding: 2rem;
   
   
     .search {
+      justify-content: center;
       input {
         padding: 0.5rem 2rem 0.5rem 0.5rem;
   

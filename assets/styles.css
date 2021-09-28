@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+.nuestros_servicios {
+  padding-bottom: 5rem;
+}
+
 .botonera {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,10 +21,17 @@
   margin-left: .5rem;
   display: inline-block;
   padding: .5rem 1rem;
-  background-color: var(--green-color);
+  background-color: inherit;
+  border-color: #FFF;
   border-radius: 66px;
   font-weight: 900;
   font-size: 1.2rem;
+}
+
+.btn_botonera:hover {
+  background-color: var(--green-color);
+  border-color: var(--bg-color);
+  color: #FFF;
 }
 
 .grid_servicios {
@@ -62,6 +73,23 @@
   font-size: 1.2rem;
 }
 
+.lista_servicios {
+  list-style-type: disc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media screen and (max-width: 780px) {
   .botonera {
     -webkit-box-orient: vertical;
@@ -93,6 +121,93 @@
 
 .fqa_titulo {
   color: var(--yellow-color);
+}
+
+.proyectos {
+  padding-bottom: 5rem;
+}
+
+.contacto {
+  margin-top: 5rem;
+}
+
+.wrapper_right_title {
+  color: #fff;
+  font-size: var(--mediumSize);
+  margin-bottom: 0.5rem;
+  padding: 1rem 2rem 0 2rem;
+}
+
+.contactoForm {
+  width: 100%;
+  padding: 2rem;
+}
+
+.contactoInput input,
+.contactoInput textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  outline: none;
+  background-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.contact_list_row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact_list_row i {
+  color: var(--colorOrange);
+  margin-right: 0.5rem;
+}
+
+.contact_list_row_contacto p {
+  margin: 2.5rem 0;
+}
+
+.contact_item_subTitle {
+  font-size: 1.5rem;
+  color: var(--colorBlue);
+  position: relative;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.testimoniosContacto {
+  background-color: #f3f3f3;
+  padding: 2rem 2rem 3rem 2rem;
+}
+
+.testimoniosCard {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.testimoniosCard h3 {
+  color: var(--colorBlue);
+  text-align: center;
+}
+
+.contactButton {
+  display: inline-block;
+  background-color: var(--colorOrange);
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0.3rem 3rem;
+  margin: 0 auto;
+  font-size: var(--mediumSize);
+  border: none;
+  cursor: pointer;
 }
 
 :root {
@@ -257,6 +372,11 @@ blockquote::before {
   font-size: 5rem;
 }
 
+/*========== Marcas ==========*/
+.marcas {
+  background-color: #FFFFFF1A;
+}
+
 /*========== Footer ==========*/
 .footer {
   width: 100%;
@@ -315,9 +435,14 @@ blockquote::before {
 
 .search {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .search input {
@@ -419,6 +544,11 @@ blockquote::before {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .search {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .search input {
     padding: 0.5rem 3rem 0.5rem 0.5rem;
   }
@@ -434,6 +564,11 @@ blockquote::before {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 0.5rem;
+  }
+  .search {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .search input {
     padding: 0.5rem 2rem 0.5rem 0.5rem;

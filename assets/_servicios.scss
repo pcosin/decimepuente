@@ -1,4 +1,8 @@
 
+.nuestros_servicios {
+    padding-bottom: 5rem;
+}
+
 .botonera {
     display: flex;
     justify-content: center;
@@ -11,11 +15,18 @@
 
     display: inline-block;
     padding: .5rem 1rem;
-    background-color: var(--green-color);
+    background-color: inherit;
+    border-color: #FFF;
     border-radius: 66px;
     font-weight: 900;
     font-size: 1.2rem;
     
+}
+
+.btn_botonera:hover {
+    background-color: var(--green-color);
+    border-color: var(--bg-color);
+    color: #FFF;
 }
 
 .grid_servicios {
@@ -40,10 +51,6 @@
     opacity: .6;
 }
 
-.serviciosCard_info {
-  
-}
-
 .cardInside ul {
     padding-left: 0;
 }
@@ -58,6 +65,14 @@
     font-weight: 900;
     font-size: 1.2rem;
 
+}
+
+.lista_servicios {
+    list-style-type: disc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 780px) { 
