@@ -15,17 +15,28 @@
     width: 100%;
     padding: 2rem;
   }
+
+  .flex_form {
+    display: flex;
+    width: 100%;
+  }
   
   .contactoInput {
     input,
     textarea {
       width: 100%;
       padding: 1rem;
+      border: 0;
       border-bottom: 2px solid #fff;
       outline: none;
       background-color: transparent;
       margin-bottom: 1rem;
     }
+
+    input:focus{
+      outline:none;
+      border: none;
+  } 
   }
   
   .contact_list_row {
