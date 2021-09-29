@@ -118,10 +118,10 @@
             align-items: center;
   }
   .serviciosCard_title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .serviciosCard_info {
-    font-size: .7rem;
+    font-size: .9rem;
   }
 }
 
@@ -153,8 +153,7 @@
 .contactoInput textarea {
   width: 100%;
   padding: 1rem;
-  border-radius: 10px;
-  border: 2px solid #fff;
+  border-bottom: 2px solid #fff;
   outline: none;
   background-color: transparent;
   margin-bottom: 1rem;
@@ -172,7 +171,7 @@
 }
 
 .contact_list_row i {
-  color: var(--colorOrange);
+  color: var(--green-color);
   margin-right: 0.5rem;
 }
 
@@ -205,13 +204,12 @@
 
 .contactButton {
   display: inline-block;
-  background-color: var(--colorOrange);
+  background-color: var(--green-color);
   color: #fff;
   text-align: center;
   border-radius: 5px;
   padding: 0.3rem 3rem;
   margin: 0 auto;
-  font-size: var(--mediumSize);
   border: none;
   cursor: pointer;
 }
@@ -325,10 +323,11 @@ header {
 }
 
 /*========== Home ==========*/
-/* 
-    .home {
-      height: 100vh;
-    } */
+.home {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 /*========== Nosotros ==========*/
 .wrapper_left p {
   font-size: 1.3rem;
@@ -422,6 +421,7 @@ blockquote::before {
   margin-bottom: 2rem;
   padding: 2rem;
   background-color: #0F0F0F;
+  max-width: 1300px;
 }
 
 .newsletter {
@@ -432,6 +432,12 @@ blockquote::before {
 
 .text {
   width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .text_para {
@@ -474,6 +480,10 @@ blockquote::before {
 
 .search svg {
   background-color: var(--green-color);
+}
+
+.search_1 p {
+  line-height: 0;
 }
 
 .footer_second .row {

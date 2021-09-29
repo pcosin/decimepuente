@@ -126,10 +126,11 @@ ul {
   }
 
     /*========== Home ==========*/
-/* 
+ 
     .home {
-      height: 100vh;
-    } */
+     max-width: 1300px;
+     margin: 0 auto;
+    }
 
 
   /*========== Nosotros ==========*/
@@ -226,6 +227,7 @@ padding: 2rem;
   margin-bottom: 2rem;
   padding: 2rem;
   background-color: #0F0F0F;
+  max-width: 1300px;
 }
 
 .newsletter {
@@ -234,6 +236,8 @@ padding: 2rem;
 
 .text {
     width: 100%;
+    justify-content: center;
+    align-items: center;
 
     &_para {
         font-weight: 500;
@@ -246,6 +250,7 @@ padding: 2rem;
   width: 100%;
   display: flex;
   justify-content: flex-end;
+ 
 
   input {
     border: 2px solid var(--text-color);
@@ -258,6 +263,8 @@ padding: 2rem;
     width: 25rem;
     
   }
+
+  
 
   .email {color: var(--green-color);
     background-color: var(--green-color);
@@ -273,6 +280,12 @@ padding: 2rem;
    
  }
 }
+
+.search_1 p{
+  line-height: 0;
+ 
+}
+
 
 .footer_second .row {
     gap: 4rem;
@@ -346,11 +359,14 @@ padding: 2rem;
   
     .search {
       justify-content: center;
+     
       input {
         padding: 0.5rem 3rem 0.5rem 0.5rem;
-  
+    
       }
+      
     }
+  
   }
   
   
@@ -373,6 +389,8 @@ padding: 2rem;
   
       }
     }
+
+  
   }
   
   
