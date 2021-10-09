@@ -35,11 +35,17 @@
   scroll-behavior: smooth;
 }
 
+html {
+  height: 100%;
+  
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
     font-family: 'Roboto', sans-serif;
+    height: 100%;
 }
 
 
@@ -94,12 +100,12 @@ ul {
 
 
 
+
     /*========== Antes del NAV ==========*/
 
     .antesDelNav {
       background-color: var(--bg-color);
       height: 100vh;
-      width: 100%;
     }
 
     .imgAntesDelNav {
@@ -112,7 +118,14 @@ ul {
       font-size: 6.5rem;
       padding: 2rem;
       text-align: center;
+     
       
+    }
+
+    .flexCenter {
+      display: flex;
+      justify-content: center;
+      align-content: center;
     }
 
   /*========== NAV ==========*/
@@ -213,12 +226,15 @@ ul {
 
 .newsletter {
     display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .text {
     width: 100%;
     justify-content: center;
     align-items: center;
+    padding-right: .8rem;
 
     &_para {
         font-weight: 500;
@@ -339,7 +355,11 @@ ul {
         .text {
             text-align: center;
         }
-    }  
+    }
+    
+    .paraEmail {
+      margin-left: 20%;
+    }
   
     .footer_link {
       display: flex;
@@ -374,10 +394,9 @@ ul {
 }
 
   
-    .contenedor {
-      border-bottom: 1px solid #e7e7e7;
-    }
-  
+
+  /*========== Footer ==========*/
+
     .footer_link {
       flex-direction: column;
       gap: 0.5rem;
@@ -390,6 +409,10 @@ ul {
         padding: 0.5rem 2rem 0.5rem 0.5rem;
   
       }
+    }
+
+    .paraEmail {
+      margin-left: 0;
     }
 
   
