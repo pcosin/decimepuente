@@ -108,8 +108,8 @@
   .grid_proyectos {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    -ms-grid-columns: (minmax(230px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -383,12 +383,6 @@ header {
           flex-grow: 0;
 }
 
-/*========== Home ==========*/
-.home {
-  max-width: 1300px;
-  margin: 0 auto;
-}
-
 /*========== Nosotros ==========*/
 .paraNosotros {
   font-size: 1.1rem;
@@ -453,7 +447,6 @@ header {
   margin-bottom: 2rem;
   padding: 2rem;
   background-color: #0F0F0F;
-  max-width: 1300px;
 }
 
 .newsletter {
@@ -615,6 +608,10 @@ header {
 }
 
 @media screen and (max-width: 570px) {
+  /*========== Antes del Nav ==========*/
+  .antesDelNav h1 {
+    font-size: 2.5rem;
+  }
   .contenedor {
     border-bottom: 1px solid #e7e7e7;
   }

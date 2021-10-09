@@ -146,13 +146,7 @@ ul {
 
   }
 
-    /*========== Home ==========*/
- 
-    .home {
-     max-width: 1300px;
-     margin: 0 auto;
-    }
-
+   
 
   /*========== Nosotros ==========*/
 
@@ -214,7 +208,7 @@ ul {
   margin-bottom: 2rem;
   padding: 2rem;
   background-color: #0F0F0F;
-  max-width: 1300px;
+ 
 }
 
 .newsletter {
@@ -372,6 +366,13 @@ ul {
   
   
   @media screen and (max-width: 570px) {
+
+       /*========== Antes del Nav ==========*/
+
+.antesDelNav h1 {
+  font-size: 2.5rem;
+}
+
   
     .contenedor {
       border-bottom: 1px solid #e7e7e7;
