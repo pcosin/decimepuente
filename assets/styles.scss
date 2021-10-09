@@ -5,6 +5,10 @@
 @import "fqa";
 @import "proyectos";
 @import "contacto";
+@import "cemento";
+@import "cementoDetalles1";
+
+
 
 
 
@@ -65,7 +69,6 @@ ul {
   }
 
 
-
   .section {
     max-width: 1200px;
     width: calc(100% - 4rem);
@@ -84,15 +87,33 @@ ul {
     font-size: 3rem;
   }
 
-  .cardsText_card {
-    box-shadow: 0px 4px 20px 4px rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    padding: 3rem;
-  }
+  .gridCenter {
+    display: grid;
+    place-items: center;
+}
 
-  .cardsText_card h4 {
-    color: var(--yellow-color)
-  }
+
+
+    /*========== Antes del NAV ==========*/
+
+    .antesDelNav {
+      background-color: var(--bg-color);
+      height: 100vh;
+      width: 100%;
+    }
+
+    .imgAntesDelNav {
+      padding: 5rem 2rem ;
+      max-height: 170px;
+    max-width: 170px;
+    }
+
+    .antesDelNav h1 {
+      font-size: 6.5rem;
+      padding: 2rem;
+      text-align: center;
+      
+    }
 
   /*========== NAV ==========*/
 
@@ -135,60 +156,26 @@ ul {
 
   /*========== Nosotros ==========*/
 
-  .wrapper_left p {
-    font-size: 1.3rem;
+  .paraNosotros{
+    font-size: 1.1rem;
   }
 
+/*========== Elegirnos ==========*/
 
-      /*========== Testimonios ==========*/
+.cardsText_card {
+  box-shadow: 0px 4px 20px 4px rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 3rem;
+}
 
-      
-      .card_testimonios {
-          position: relative;
-      }
+.cardsText_card h4 {
+  color: var(--yellow-color);
+  font-size: 2.3rem;
+  font-family: 'Oswald', sans-serif; 
+  margin-bottom: 2rem;
+}
 
-      blockquote {
-        border:none;
-        font-family:Georgia, "Times New Roman", Times, serif;
-        quotes: "\201C""\201D""\201C""\2019";
-    }
-
-      blockquote::before {
-          content: open-quote;
-          color: var(--yellow-color);
-          position: absolute;
-          font-size: 10em;
-          top: -100px;
-          left: 20px;
-         
-      }
-
-
-    /*========== Números ==========*/
-
-    .numeros {
-        margin-top: 3rem;
-       
-    
-    }
-
-    .card_numeros {
-width: 100%;
-padding: 2rem;
-    }
-
-    .numeros_card {
-        box-shadow: 0px 4px 20px 4px rgba(255, 255, 255, 0.1);
-        border-radius: 8px;
-        display: flex;
-    }
-
-
-    .numeros_text {
-      color: var(--green-color);
-      font-size: 5rem;
-    }
-
+ 
 /*========== Marcas ==========*/
 
 .marcas {
@@ -300,6 +287,10 @@ padding: 2rem;
 
 }
 
+.footer_item_text {
+  max-width: 30ch;
+}
+
 .footer_item_title {
   font-size: 1.5rem;
   font-weight: bold;
@@ -327,11 +318,7 @@ padding: 2rem;
 
 @media screen and (max-width: 780px) {
 
-    .numeros_card {
-        flex-direction: column;
-    }
-
-
+   
     /*========== Footer ==========*/
 
     .footer_list {

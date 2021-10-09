@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
@@ -6,104 +5,35 @@
   padding-bottom: 5rem;
 }
 
-.botonera {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 3rem;
-}
-
-.btn_botonera {
-  color: #FFF;
-  margin-left: .5rem;
-  display: inline-block;
-  padding: .5rem 1rem;
-  background-color: inherit;
-  border-color: #FFF;
-  border-radius: 66px;
-  font-weight: 900;
-  font-size: 1.2rem;
-}
-
-.btn_botonera:hover {
-  background-color: var(--green-color);
-  border-color: var(--bg-color);
-  color: #FFF;
-}
-
-.grid_servicios {
+.gridServicios {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
 }
 
-.serviciosCard {
+.cardsText_cardServicios {
   -webkit-box-shadow: 0px 4px 20px 4px rgba(255, 255, 255, 0.1);
           box-shadow: 0px 4px 20px 4px rgba(255, 255, 255, 0.1);
   border-radius: 8px;
-  padding: 2.5rem;
+  padding: 2rem;
 }
 
-.serviciosCard_title {
-  color: var(--yellow-color);
-  font-size: 3rem;
+.gridCenter {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
-.serviciosCard_subTitleTop {
-  opacity: .6;
-}
-
-.cardInside ul {
-  padding-left: 0;
-}
-
-.serviciosCard_button {
+.textCardServicios {
   color: #FFF;
-  margin: 0 auto;
-  display: block;
-  padding: .5rem 1rem;
-  background-color: var(--green-color);
-  border-radius: 66px;
-  font-weight: 900;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
 }
 
-.lista_servicios {
-  list-style-type: disc;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media screen and (max-width: 780px) {
-  .botonera {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 1rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+.iconServicios {
+  color: var(--yellow-color);
+  margin-bottom: 3rem;
 }
 
 @media screen and (max-width: 570px) {
@@ -131,10 +61,66 @@
 
 .proyectos {
   padding-bottom: 5rem;
+  max-width: 1300px;
+}
+
+.grid_proyectos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: .5rem;
+}
+
+.card_proyectos {
+  -webkit-box-shadow: 0px 4px 20px 4px rgba(255, 255, 255, 0.1);
+          box-shadow: 0px 4px 20px 4px rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.propiedadesCard_img img {
+  border-radius: 8px;
+}
+
+.proyectosCard_button {
+  color: #FFF;
+  margin: 0 auto;
+  display: block;
+  padding: .5rem 1rem;
+  background-color: var(--green-color);
+  border-radius: 66px;
+  font-weight: 900;
+  font-size: 1.2rem;
 }
 
 .contacto {
-  margin-top: 5rem;
+  margin-top: 4rem;
+}
+
+.contactoBox {
+  padding: 0 3rem;
+  background-color: #0F0F0F;
+  border-radius: 8px;
+  margin-bottom: 6rem;
+}
+
+.contactoBoxInside {
+  padding: 1.5rem;
+}
+
+.wrapper_left_text {
+  max-width: 40ch;
 }
 
 .wrapper_right_title {
@@ -227,6 +213,23 @@
   cursor: pointer;
 }
 
+.paraCemento {
+  font-size: 1.3rem;
+}
+
+.imgCemento_3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: .5rem;
+  margin: 2rem 0 4rem 0;
+  max-width: 33%;
+}
+
+.wrapper_right {
+  width: 100%;
+}
+
 :root {
   --bg-color: #0A0A0A;
   --text-color: #FFFFFF;
@@ -295,15 +298,29 @@ img {
   font-size: 3rem;
 }
 
-.cardsText_card {
-  -webkit-box-shadow: 0px 4px 20px 4px rgba(255, 255, 255, 0.1);
-          box-shadow: 0px 4px 20px 4px rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  padding: 3rem;
+.gridCenter {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
-.cardsText_card h4 {
-  color: var(--yellow-color);
+/*========== Antes del NAV ==========*/
+.antesDelNav {
+  background-color: var(--bg-color);
+  height: 100vh;
+  width: 100%;
+}
+
+.imgAntesDelNav {
+  padding: 5rem 2rem;
+  max-height: 170px;
+  max-width: 170px;
+}
+
+.antesDelNav h1 {
+  font-size: 6.5rem;
+  padding: 2rem;
+  text-align: center;
 }
 
 /*========== NAV ==========*/
@@ -342,52 +359,23 @@ header {
 }
 
 /*========== Nosotros ==========*/
-.wrapper_left p {
-  font-size: 1.3rem;
+.paraNosotros {
+  font-size: 1.1rem;
 }
 
-/*========== Testimonios ==========*/
-.card_testimonios {
-  position: relative;
-}
-
-blockquote {
-  border: none;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  quotes: "“" "”" "“" "’";
-}
-
-blockquote::before {
-  content: open-quote;
-  color: var(--yellow-color);
-  position: absolute;
-  font-size: 10em;
-  top: -100px;
-  left: 20px;
-}
-
-/*========== Números ==========*/
-.numeros {
-  margin-top: 3rem;
-}
-
-.card_numeros {
-  width: 100%;
-  padding: 2rem;
-}
-
-.numeros_card {
+/*========== Elegirnos ==========*/
+.cardsText_card {
   -webkit-box-shadow: 0px 4px 20px 4px rgba(255, 255, 255, 0.1);
           box-shadow: 0px 4px 20px 4px rgba(255, 255, 255, 0.1);
   border-radius: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 3rem;
 }
 
-.numeros_text {
-  color: var(--green-color);
-  font-size: 5rem;
+.cardsText_card h4 {
+  color: var(--yellow-color);
+  font-size: 2.3rem;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 2rem;
 }
 
 /*========== Marcas ==========*/
@@ -510,6 +498,10 @@ blockquote::before {
   font-weight: bold;
 }
 
+.footer_item_text {
+  max-width: 30ch;
+}
+
 .footer_item_title {
   font-size: 1.5rem;
   font-weight: bold;
@@ -532,12 +524,6 @@ blockquote::before {
 }
 
 @media screen and (max-width: 780px) {
-  .numeros_card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   /*========== Footer ==========*/
   .footer_list {
     -webkit-box-orient: vertical;
