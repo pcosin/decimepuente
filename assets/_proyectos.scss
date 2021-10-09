@@ -21,7 +21,6 @@
 
 }
 
-
 .propiedadesCard_img img{
     border-radius: 8px;
 }
@@ -39,7 +38,17 @@
 
 }
 
+@media screen and (max-width: 570px) {
 
+    .grid_proyectos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        align-items: center;
+      }
+    
+     
+    
+    }
 
 
 

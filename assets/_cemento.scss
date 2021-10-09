@@ -12,3 +12,15 @@
 .wrapper_right {
     width: 100%;
 }
+
+
+@media screen and (max-width: 780px) {
+
+    /*========== Nosotros ==========*/
+
+  .contenedorFlexColumn {
+    display: flex;
+    flex-direction: column;
+  }
+
+}

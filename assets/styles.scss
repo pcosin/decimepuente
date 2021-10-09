@@ -318,7 +318,21 @@ ul {
 
 @media screen and (max-width: 780px) {
 
-   
+
+    /*========== Antes del Nav ==========*/
+
+.antesDelNav h1 {
+  font-size: 3.5rem;
+}
+
+
+    /*========== Nosotros ==========*/
+
+  .contenedorFlexColumn{
+    display: flex;
+    flex-direction: column;
+  }
+
     /*========== Footer ==========*/
 
     .footer_list {

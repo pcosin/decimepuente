@@ -104,6 +104,18 @@
   font-size: 1.2rem;
 }
 
+@media screen and (max-width: 570px) {
+  .grid_proyectos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .contacto {
   margin-top: 4rem;
 }
@@ -117,6 +129,12 @@
 
 .contactoBoxInside {
   padding: 1.5rem;
+}
+
+.formCheck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .wrapper_left_text {
@@ -228,6 +246,19 @@
 
 .wrapper_right {
   width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+  /*========== Nosotros ==========*/
+  .contenedorFlexColumn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 :root {
@@ -524,6 +555,20 @@ header {
 }
 
 @media screen and (max-width: 780px) {
+  /*========== Antes del Nav ==========*/
+  .antesDelNav h1 {
+    font-size: 3.5rem;
+  }
+  /*========== Nosotros ==========*/
+  .contenedorFlexColumn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   /*========== Footer ==========*/
   .footer_list {
     -webkit-box-orient: vertical;
