@@ -2,14 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 @import "servicios";
-@import "fqa";
 @import "proyectos";
 @import "contacto";
 @import "cemento";
 @import "cementoDetalles1";
-
-
-
 
 
 
@@ -78,11 +74,6 @@ ul {
   .section {
     max-width: 1200px;
     width: calc(100% - 4rem);
-    margin: auto;
-
-  } 
-
-  .section_newsleter {
     margin: auto;
 
   } 
@@ -187,6 +178,25 @@ ul {
 
 .marcas {
   background-color: #FFFFFF1A;
+  margin: 4rem 0;
+}
+
+.section_title_marcas {
+  padding: 1rem 0 1rem 0;
+  font-family: Anton;
+  font-size: 3rem;
+}
+
+.flexMarcas {
+  display: flex;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.imgMarcas {
+  max-width: 250px;
 }
 
 /*========== Footer ==========*/
@@ -223,6 +233,11 @@ ul {
   background-color: #0F0F0F;
  
 }
+
+.section_newsleter {
+  margin: auto;
+
+} 
 
 .newsletter {
     display: flex;
@@ -342,6 +357,10 @@ ul {
     display: flex;
     flex-direction: column;
   }
+
+
+  /*========== Marcas ==========*/
+
 
     /*========== Footer ==========*/
 

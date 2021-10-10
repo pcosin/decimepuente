@@ -13,6 +13,20 @@
     width: 100%;
 }
 
+.videoResponsive {
+  overflow:hidden;
+  padding-bottom:630px; /* Adecua este valor para controlar la altura del video */
+  position:relative;
+  height:0;
+  margin-bottom: 4rem;
+}
+.videoResponsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
 
 @media screen and (max-width: 780px) {
 

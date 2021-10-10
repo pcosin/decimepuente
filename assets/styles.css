@@ -65,10 +65,6 @@
   }
 }
 
-.fqa_titulo {
-  color: var(--yellow-color);
-}
-
 .proyectos {
   padding-bottom: 5rem;
   max-width: 1300px;
@@ -87,6 +83,7 @@
           box-shadow: 0px 4px 20px 4px rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 1rem;
+  margin: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,6 +255,23 @@
   width: 100%;
 }
 
+.videoResponsive {
+  overflow: hidden;
+  padding-bottom: 630px;
+  /* Adecua este valor para controlar la altura del video */
+  position: relative;
+  height: 0;
+  margin-bottom: 4rem;
+}
+
+.videoResponsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
 @media screen and (max-width: 780px) {
   /*========== Nosotros ==========*/
   .contenedorFlexColumn {
@@ -331,10 +345,6 @@ img {
 .section {
   max-width: 1200px;
   width: calc(100% - 4rem);
-  margin: auto;
-}
-
-.section_newsleter {
   margin: auto;
 }
 
@@ -431,6 +441,26 @@ header {
 /*========== Marcas ==========*/
 .marcas {
   background-color: #FFFFFF1A;
+  margin: 4rem 0;
+}
+
+.section_title_marcas {
+  padding: 1rem 0 1rem 0;
+  font-family: Anton;
+  font-size: 3rem;
+}
+
+.flexMarcas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.imgMarcas {
+  max-width: 250px;
 }
 
 /*========== Footer ==========*/
@@ -472,6 +502,10 @@ header {
   margin-bottom: 2rem;
   padding: 2rem;
   background-color: #0F0F0F;
+}
+
+.section_newsleter {
+  margin: auto;
 }
 
 .newsletter {
@@ -590,6 +624,7 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  /*========== Marcas ==========*/
   /*========== Footer ==========*/
   .footer_list {
     -webkit-box-orient: vertical;
