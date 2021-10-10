@@ -31,17 +31,14 @@
   scroll-behavior: smooth;
 }
 
-html {
-  height: 100%;
-  
-}
+
 
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
     font-family: 'Roboto', sans-serif;
-    height: 100%;
+   
 }
 
 
@@ -58,9 +55,6 @@ ul {
     max-width: 100%;
     height: auto;
   }
-
-  /* font-family: 'Anton', sans-serif;
-  font-family: 'Oswald', sans-serif; */
 
   /*========== UTILITIES ==========*/
 
@@ -149,8 +143,12 @@ ul {
     flex-grow: 0;
 
   }
+  /*========== Nosotros ==========*/
 
-   
+  .HomeContenedor {
+    margin: 0 auto;
+
+  } 
 
   /*========== Nosotros ==========*/
 

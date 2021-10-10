@@ -321,16 +321,11 @@ iframe {
   scroll-behavior: smooth;
 }
 
-html {
-  height: 100%;
-}
-
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
   line-height: 1.6;
   font-family: 'Roboto', sans-serif;
-  height: 100%;
 }
 
 ul {
@@ -347,8 +342,6 @@ img {
   height: auto;
 }
 
-/* font-family: 'Anton', sans-serif;
-  font-family: 'Oswald', sans-serif; */
 /*========== UTILITIES ==========*/
 .grid {
   display: -ms-grid;
@@ -432,6 +425,11 @@ header {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
+}
+
+/*========== Nosotros ==========*/
+.HomeContenedor {
+  margin: 0 auto;
 }
 
 /*========== Nosotros ==========*/
