@@ -115,11 +115,15 @@
   .grid_proyectos {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(230px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .card_proyectos {
+    padding: .5rem;
+    margin: 0;
   }
 }
 
@@ -267,6 +271,11 @@
   margin-bottom: 4rem;
 }
 
+iframe {
+  width: 1120px;
+  height: 630px;
+}
+
 .videoResponsive iframe {
   left: 0;
   top: 0;
@@ -285,6 +294,10 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  iframe {
+    width: 300px;
+    height: 150px;
   }
 }
 
