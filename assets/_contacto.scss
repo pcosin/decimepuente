@@ -16,6 +16,7 @@
 
   .formCheck {
     display: flex;
+   
   }
 
 
@@ -34,15 +35,17 @@
   
   .contactoForm {
     width: 100%;
-    padding: 2rem;
+   
   }
 
   .flex_form {
     display: flex;
     width: 100%;
+    gap: 1rem;
   }
   
   .contactoInput {
+    
     input,
     textarea {
       width: 100%;
@@ -52,11 +55,28 @@
       outline: none;
       background-color: transparent;
       margin-bottom: 1rem;
+      color: white;
     }
+
+    ::placeholder {
+      color: white;
+    }
+
+    input[type="checkbox"]:checked {
+      border: 1px solid var(--green-color);
+    }
+
+
+    input:checked {
+      border: 1px solid var(--green-color);
+    }
+
+  
 
     input:focus{
       outline:none;
       border: none;
+      
   } 
   }
   
@@ -72,31 +92,10 @@
   }
   
   .contact_list_row_contacto p {
-    margin: 2.5rem 0;
+    margin: 2rem 0;
   }
   
-  .contact_item_subTitle {
-    font-size: 1.5rem;
-    color: var(--colorBlue);
-    position: relative;
-    line-height: 1.3;
-    margin-bottom: 1rem;
-  }
-  
-  .testimoniosContacto {
-    background-color: #f3f3f3;
-    padding: 2rem 2rem 3rem 2rem;
-  }
-  
-  .testimoniosCard {
-    background-color: #fff;
-    padding: 1rem;
-  
-    h3 {
-      color: var(--colorBlue);
-      text-align: center;
-    }
-  }
+
   
   .contactButton {
     display: inline-block;
@@ -108,4 +107,5 @@
     margin: 0 auto;
     border: none;
     cursor: pointer;
+    margin: auto;
   }
