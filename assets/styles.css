@@ -368,6 +368,16 @@ iframe {
             flex-direction: column;
   }
   iframe {
+    width: 400px;
+    height: 450px;
+  }
+  .videoResponsive {
+    padding-bottom: 450px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  iframe {
     width: 300px;
     height: 150px;
   }
