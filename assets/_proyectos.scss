@@ -1,6 +1,9 @@
 .proyectos {
     padding-bottom: 5rem;
-    max-width: 1300px;
+    max-width: 1200px;
+    width: calc(100% - 4rem);
+    margin: auto;
+
 }
 
 .grid_proyectos {
@@ -54,6 +57,19 @@
     
     }
 
+    @media screen and (max-width: 350px) {
+
+        .proyectos {
+            width: calc(100% - 2rem);
+           
+    
+        }
+    
+        
+    
+        
+    
+    }
 
 
 

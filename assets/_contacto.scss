@@ -1,5 +1,9 @@
 .contacto {
     margin-top: 4rem;
+    max-width: 1200px;
+    width: calc(100% - 4rem);
+    margin: auto;
+
     
   }
 
@@ -182,5 +186,18 @@
 
 
 
+
+}
+
+@media screen and (max-width: 350px) {
+
+  .contacto {
+      width: calc(100% - 2rem);
+
+  }
+
+
+
+  
 
 }

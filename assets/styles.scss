@@ -159,9 +159,10 @@ ul {
 /*========== Elegirnos ==========*/
 
 .cardsText_card {
-  box-shadow: 0px 4px 20px 4px rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 20px 3px rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 3rem;
+  margin: 0 .5rem;
 }
 
 .cardsText_card h4 {
@@ -356,11 +357,15 @@ ul {
     flex-direction: column;
   }
 
+  .wrapper_left {
+    margin-top: 1rem;
+  }
+
 
   /*========== Marcas ==========*/
 
 
-    /*========== Footer ==========*/
+  /*========== Footer ==========*/
 
     .footer_list {
       flex-direction: column;

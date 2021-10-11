@@ -3,13 +3,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
 .nuestros_servicios {
   padding-bottom: 5rem;
+  max-width: 1200px;
+  width: calc(100% - 4rem);
+  margin: auto;
 }
 
 .gridServicios {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(290px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   gap: 1rem;
 }
 
@@ -65,9 +68,20 @@
   }
 }
 
+@media screen and (max-width: 350px) {
+  .nuestros_servicios {
+    width: calc(100% - 2rem);
+  }
+  .cardsText_cardServicios {
+    padding: .3rem;
+  }
+}
+
 .proyectos {
   padding-bottom: 5rem;
-  max-width: 1300px;
+  max-width: 1200px;
+  width: calc(100% - 4rem);
+  margin: auto;
 }
 
 .grid_proyectos {
@@ -122,8 +136,17 @@
   }
 }
 
+@media screen and (max-width: 350px) {
+  .proyectos {
+    width: calc(100% - 2rem);
+  }
+}
+
 .contacto {
   margin-top: 4rem;
+  max-width: 1200px;
+  width: calc(100% - 4rem);
+  margin: auto;
 }
 
 .contactoBox {
@@ -315,6 +338,12 @@
   .contactButton {
     padding: 0.3rem 3rem;
     font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .contacto {
+    width: calc(100% - 2rem);
   }
 }
 
@@ -524,10 +553,11 @@ header {
 
 /*========== Elegirnos ==========*/
 .cardsText_card {
-  -webkit-box-shadow: 0px 4px 20px 4px rgba(255, 255, 255, 0.1);
-          box-shadow: 0px 4px 20px 4px rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0px 4px 20px 3px rgba(255, 255, 255, 0.1);
+          box-shadow: 0px 4px 20px 3px rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 3rem;
+  margin: 0 .5rem;
 }
 
 .cardsText_card h4 {
@@ -722,6 +752,9 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .wrapper_left {
+    margin-top: 1rem;
   }
   /*========== Marcas ==========*/
   /*========== Footer ==========*/
