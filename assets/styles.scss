@@ -439,5 +439,12 @@ ul {
 
   
   }
-  
+  @media screen and (max-width: 350px) {
+
+
+  .cardsText_card h4 {
+    font-size: 1.7rem;
+  }
+
+  }
   
